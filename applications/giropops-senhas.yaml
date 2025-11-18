@@ -16,4 +16,4 @@ spec:
   syncPolicy: 
     automated: {}
     syncOptions:
-     - CreateNamespace=true1
+     - CreateNamespace=true
