@@ -12,14 +12,16 @@ spec:
     path: app-of-apps
     helm: 
       parameters:
-      - name: argocd.giropops-senhas.enabled
+      - name: argocd.giropopsSenhas.enabled
         value: "true"
-      - name: argocd.random-logger.enabled
+      - name: argocd.randomLogger.enabled
         value: "true" 
     repoURL: https://github.com/dara-cod/descomplicando-gitops-no-kubernetes-argocd.git
     targetRevision: feat/day2
   syncPolicy:
-    automated: 
+    automated:
+      prune: true
       selfHeal: true 
     syncOptions: 
     - CreateNamespace=true
+    - PruneLast=true
