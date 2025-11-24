@@ -15,7 +15,7 @@ spec:
       - name: argocd.giropops-senhas.enabled
         value: "true"
       - name: argocd.random-logger.enabled
-        value: true
+        value: "true" 
     repoURL: https://github.com/dara-cod/descomplicando-gitops-no-kubernetes-argocd.git
     targetRevision: feat/day2
   syncPolicy:
